@@ -3,7 +3,7 @@
 using namespace std;
 #include <iostream>
 
-class Solution {
+class MergeSort {
     public:
     void merge(vector<int>& nums, int l, int m, int r) {
         vector<int> left = vector<int>(nums.begin()+l, nums.begin()+m+1);
@@ -36,7 +36,7 @@ class Solution {
 };
 
 int main() {
-    Solution s;
+    MergeSort s;
     vector<int> nums = {1,2,3,6,5,4};
     s.mergeSort(nums, 0, nums.size()-1);
     for(int n: nums) cout << n << " ";
